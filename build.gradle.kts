@@ -15,15 +15,14 @@ plugins {
     kotlinOptions {
         jvmTarget = "17"
     }
+
     defaultConfig {
         applicationId = "com.novaconta.app"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
         versionName = "1.0.0"
-        buildConfigField("String", "API_BASE_URL", "\"https://api.novaconta.example\"")
     }
-
     buildFeatures {
         compose = true
         buildConfig = true
